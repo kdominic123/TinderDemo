@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6EE3DD771E96F9B400E0EF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DD761E96F9B400E0EF25 /* AppDelegate.swift */; };
-		6EE3DD791E96F9B400E0EF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DD781E96F9B400E0EF25 /* ViewController.swift */; };
 		6EE3DD7C1E96F9B400E0EF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3DD7A1E96F9B400E0EF25 /* Main.storyboard */; };
 		6EE3DD7E1E96F9B400E0EF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3DD7D1E96F9B400E0EF25 /* Assets.xcassets */; };
 		6EE3DD811E96F9B400E0EF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3DD7F1E96F9B400E0EF25 /* LaunchScreen.storyboard */; };
 		6EE3DD8C1E96F9B400E0EF25 /* TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DD8B1E96F9B400E0EF25 /* TinderTests.swift */; };
 		6EE3DD971E96F9B400E0EF25 /* TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DD961E96F9B400E0EF25 /* TinderUITests.swift */; };
+		6EE3DDA51E96FA5000E0EF25 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DDA41E96FA5000E0EF25 /* CardsViewController.swift */; };
+		6EE3DDA71E9707F000E0EF25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3DDA61E9707F000E0EF25 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		6EE3DD731E96F9B400E0EF25 /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE3DD761E96F9B400E0EF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EE3DD781E96F9B400E0EF25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EE3DD7B1E96F9B400E0EF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EE3DD7D1E96F9B400E0EF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EE3DD801E96F9B400E0EF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		6EE3DD921E96F9B400E0EF25 /* TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE3DD961E96F9B400E0EF25 /* TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUITests.swift; sourceTree = "<group>"; };
 		6EE3DD981E96F9B400E0EF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE3DDA41E96FA5000E0EF25 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		6EE3DDA61E9707F000E0EF25 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				6EE3DD761E96F9B400E0EF25 /* AppDelegate.swift */,
-				6EE3DD781E96F9B400E0EF25 /* ViewController.swift */,
 				6EE3DD7A1E96F9B400E0EF25 /* Main.storyboard */,
 				6EE3DD7D1E96F9B400E0EF25 /* Assets.xcassets */,
 				6EE3DD7F1E96F9B400E0EF25 /* LaunchScreen.storyboard */,
 				6EE3DD821E96F9B400E0EF25 /* Info.plist */,
+				6EE3DDA41E96FA5000E0EF25 /* CardsViewController.swift */,
+				6EE3DDA61E9707F000E0EF25 /* ProfileViewController.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE3DD791E96F9B400E0EF25 /* ViewController.swift in Sources */,
+				6EE3DDA71E9707F000E0EF25 /* ProfileViewController.swift in Sources */,
 				6EE3DD771E96F9B400E0EF25 /* AppDelegate.swift in Sources */,
+				6EE3DDA51E96FA5000E0EF25 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
